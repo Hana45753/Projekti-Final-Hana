@@ -1,0 +1,331 @@
+:root{
+    --pink: #e84393;
+    /* 333-zi, fff-bardh, eee-bardh+hint 999-e hint e qilt, 555,666-e hint e mbyllt, rgba*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 20px 9%;
+
+}
+
+.btn{
+    
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 50px;
+    background: #333;
+    color: #fff;
+    padding: 9px 35px;
+    font-size: 17px;
+}
+.btn:hover{
+    background: var(--pink);
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 20px 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+.logo{
+    font-size: 30px;
+    color: #333;
+    font-weight: bolder;
+    text-transform: none;
+    margin-left: -105px;
+}
+.logo span{
+    color: var(--pink);
+}
+
+.navbar a{
+    font-size: 20px;
+    padding: 0 15px;
+    color: #666;
+}
+.navbar a:hover{
+    color: var(--pink);
+}
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(https://static.vecteezy.com/system/resources/previews/021/156/205/large_2x/spring-tulip-flowers-on-pink-background-top-view-in-flat-lay-style-free-photo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .content{
+    max-width: 500px;
+}
+.home .content h3{
+    font-size: 50px;
+    color: #333;
+}
+.home .content span{
+    font-size: 27px;
+    color: var(--pink);
+    padding: 10px 0;
+    line-height: 1.5;
+}
+.home .content p{
+    font-size: 15px;
+    color: #999;
+    padding: 10px 0;
+    line-height: 1.5;
+}
+.heading{
+    text-align: center;
+    font-size: 40px;
+    color: #333;
+    padding: 10px;
+    margin-top: 100px;
+    background: rgba(255, 51, 153, .05);
+}
+.heading span{
+    color: var(--pink);
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    padding-bottom: 30px;
+}
+.about .row .photo-container{
+    flex: 1 1 400px;
+    position: relative;
+}
+.fusha{
+    width: 100%;
+    border: 15px solid #fff;
+    border-radius: 5px;
+    height: 100%;
+    object-fit: cover;
+}
+.about .row .content{
+    flex: 1 1 400px;
+}
+
+.about .row .content h3{
+    font-size: 30px;
+    color: #333;
+}
+.about .row .content h4{
+    font-size: 30px;
+    color: var(--pink);
+}
+.about .row .content p{
+    font-size: 15;
+    color: #999;
+    padding: 5;
+    padding-top: 10px;
+    line-height: 1.5;
+}
+
+.icons-container{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+.icons-container .icons{
+    background: #eee;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex: 1 1 250px;
+width: 185px;
+}
+.icons-container .icons h3{
+    color: #333;
+    padding-bottom: 5px;
+    font-size: 15px;
+}
+.icons-container .icons span{
+    color: #555;
+    font-size: 13px;
+}
+
+
+
+.products .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.products .box-container .box{
+    flex: 1 1 300px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    position: relative;
+    margin-top: 40px;
+    margin-right: 30px;
+}
+.products .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+    overflow: hidden;
+}
+.products .box-container .box .image img{
+    height: 250px;
+}
+.products .box-container .box:hover .image img{
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+.products .box-container .box .image .icons{
+    position: absolute;
+    bottom: -70px;
+    left: 0;
+    right: 0;
+    display: flex;
+}
+.products .box-container .box:hover .image .icons{
+    bottom: 0;
+    transition-duration: 0.3s;
+}
+.products .box-container .box .image .icons a{
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    width: 50%;
+    background: var(--pink);
+    color: #fff;
+}
+.products .box-container .box .image .icons .cart-btn{
+    width: 100%;
+}
+.products .box-container .box .image .icons a:hover{
+    background: #333;
+    transition-duration: 0,3s;
+}
+.products .box-container .box .content{
+    padding: 20px;
+    text-align: center;
+}
+.products .box-container .box .content h3{
+    font-size: 25px;
+    color: #333;
+}
+.products .box-container .box .content .price{
+    font-size: 25px;
+    color: var(--pink);
+    font-weight: bolder;
+    padding-top: 10px;
+}
+
+
+
+.review .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.review .box-container .box{
+    flex: 1 1 300px;
+    border-radius: 5px;
+    padding: 30px 20px;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, .1);
+    margin-top: 40px;
+    margin-right: 30px;
+}
+.review .box-container .box p{
+    color: #999;
+    font-size: 15px;
+    line-height: 1.5;
+    padding-top: 20px;
+}
+.review .box-container .box .user{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+.review .box-container .box .user img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.review .box-container .box .user h3{
+    font-size: 20px;
+    color: #333;
+}
+
+
+
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 50px;
+}
+.contact .row form{
+    flex: 1 1 400px;
+    padding: 20px 25px;
+    border: 0.1rem solid rgba(0, 0, 0, .1);
+    background: #fff;
+    border-radius: 5px;
+}
+.contact .row .image{
+    flex: 1 1 400px;
+}
+.contact .row .image img{
+    width: 100%;
+}
+.contact .row form .box{
+    padding: 10px;
+    font-size: 17px;
+    color: #333;
+    text-transform: none;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    margin: 7px 0;
+    width: 100%;
+}
+.contact .row form .box:hover{
+    border-color: var(--pink);
+}
+.contact .row form textarea{
+    height: 150px;
+    resize: none;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--pink);
+    color: #eee;
+    margin-top: 40px;
+    font-size: 12px;
+}
